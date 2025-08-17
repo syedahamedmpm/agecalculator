@@ -1,0 +1,131 @@
+/* Full screen centering */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background: #4D2D8C;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container styling */
+.container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  text-align: center;
+}
+
+/* Heading */
+.container h1 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #6f6f6f;
+}
+
+/* Result text */
+.result {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #6f6f6f;
+}
+
+/* Form group */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+  color: #bababa;
+}
+
+/* Inputs */
+input[type='date'],
+input[type='number'] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #bababa;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #6f6f6f;
+}
+
+/* Button */
+.btn {
+    font-family: inherit; /* makes it take from body */
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #4D2D8C;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Button hover effect */
+.btn:hover {
+    font-family: inherit; /* makes it take from body */
+  background: transparent;
+  border: 1px solid #4D2D8C;
+  border-radius: 6px;
+  color:#4D2D8C
+}
+.btn:disabled {
+    font-family: inherit; /* makes it take from body */
+  background: #f2f2f2;
+}
+
+
+
+
+
+/* 📱 On mobile, simplify or shift gradients */
+@media (max-width: 768px) {
+  body {
+    background: #4D2D8C;
+  }
+  .container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 700px;
+  text-align: center;
+}
+}
+
+/* 📱 Extra small screens */
+@media (max-width: 480px) {
+  body {
+    background: #4D2D8C;
+  }
+  .container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+}
+
+}
+
+
