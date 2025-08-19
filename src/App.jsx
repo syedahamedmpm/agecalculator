@@ -50,7 +50,7 @@ function App() {
       monthDifferenced -= 1;
       // get last day of previous month
       let prevMonth = new Date(end.getFullYear(), end.getMonth(), 0);
-      days += prevMonth.getDate();
+      daysDifferenced += prevMonth.getDate();
     }
     // Borrow months from previous year if negative
     if (monthDifferenced < 0) {
