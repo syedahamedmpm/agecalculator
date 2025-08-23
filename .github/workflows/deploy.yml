@@ -1,9 +1,9 @@
-name: Deploy React App to GitHub Pages
+name: Deploy Vite app to GitHub Pages
 
 on:
   push:
     branches:
-      - syed-age # change this to your default branch (main/master)
+      - syed-age # or master, depending on your repo
 
 jobs:
   build-and-deploy:
@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "18" # or whatever version your project needs
+          node-version: "18"
 
       - name: Install dependencies
         run: npm install
@@ -28,4 +28,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+          publish_dir: ./dist # Vite uses dist
