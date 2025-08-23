@@ -101,7 +101,7 @@ function App() {
   console.log("input", input);
   return (
     <div className="container">
-      <h1>Age Calculator</h1>
+      <h1>Age Calculator By Syed Ahamed</h1>
 
       <div className="form-group">
         <label>Select DOB</label>
